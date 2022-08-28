@@ -53,6 +53,6 @@ function showResult() {
 }
 // i took this snippet from Fryderyk (https://relcnob.github.io/worlds_worst_calculator/)
 function clearList() {
-  resultList.innerHTML = "";
+  resultList.innerHTML = "<li>0</li> <li>0</li> <li>0</li> <li>0</li>";
 }
 // end of stolen snippet
