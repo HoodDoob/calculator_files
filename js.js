@@ -51,7 +51,7 @@ function showResult() {
     resultList.append(li);
   }
 }
-// i took this snippet from Fryderyk (https://relcnob.github.io/worlds_worst_calculator/)
+// i took this snippet from Fryderyk, but changed it so that it goes back to th original state (it's better my way ;))))) (https://relcnob.github.io/worlds_worst_calculator/)
 function clearList() {
   resultList.innerHTML = "<li>0</li> <li>0</li> <li>0</li> <li>0</li>";
 }
