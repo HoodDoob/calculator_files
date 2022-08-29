@@ -8,7 +8,6 @@ function setting_up() {
   console.log("we're set up");
   document.querySelector("#calculate").addEventListener("click", getValues);
   document.querySelector("#clear").addEventListener("click", clearList);
-  document.querySelector("#results").scrollTo(0, 9999999);
 }
 
 function getValues() {
@@ -49,10 +48,15 @@ function showResult() {
     let li = document.createElement("li");
     li.textContent = result;
     resultList.append(li);
+    document.querySelector("#results").scrollTo(0, 9999999);
   }
 }
-// i took this snippet from Fryderyk, but changed it so that it goes back to th original state (it's better my way ;))))) (https://relcnob.github.io/worlds_worst_calculator/)
+// i took bit of this snippet from Fryderyk, but changed it so that it goes back to th original state and restarts the checkbox (it's better my way ;))))) (https://relcnob.github.io/worlds_worst_calculator/)
 function clearList() {
   resultList.innerHTML = "<li>0</li> <li>0</li> <li>0</li> <li>0</li>";
+  document.querySelector("#doround").checked = false;
+  console.log("clearing");
+
+  // document.querySelector("#results").textContent = "cock";
 }
 // end of stolen snippet
